@@ -1,0 +1,41 @@
+.visible-hidden {
+  display: none;
+}
+
+.navigation {
+box-shadow: 2px 0 10px 5px rgba(0,0,0,0.25);
+}
+
+.feedback {
+  height: 116px;
+  width: 100%;
+
+  background-color: #bfac45;
+
+
+  p {
+    display: inline-block;
+  }
+  a {
+  padding: 20px 67px;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #454545;
+}
+
+.bottom-menu{
+  p {
+text-transform: capitalize;
+  }
+}
+
+.bottom-menu__links {
+  a {
+    text-transform: uppercase;
+  }
+}
+

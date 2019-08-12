@@ -1,93 +1,53 @@
-<header>
-  <section class="navigation">
-    <h2 class="visible-hidden">Navigation section</h2>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" routerLink="">Rennit</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample03">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">about us</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="">apartments<span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="application">application</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="payment">make a payment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="contact">contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="favorites">my favorites</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="auth/login">login/</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="auth/register">register</a>
-        </li>
-      </ul>
-    </div>
+<header class='main-header'>
+  <nav class='main-navigation'>
+    <ul class='site-navigation'>
+      <a href="#main" class="main-logo"><img src="../assets/rennit_logo.png" alt="rennit-logo" width="144" height="56"></a>
+      <li class='site-navigation-item'><a routerLink="about">about us</a></li>
+      <li class='site-navigation-item'><a routerLink="">apartments</a></li>
+      <li class='site-navigation-item'><a routerLink="application">application</a></li>
+      <li class='site-navigation-item'><a routerLink="payment">make a payment</a></li>
+      <li class='site-navigation-item'><a routerLink="contact">contact us</a></li>
+      <li class='user-navigation-item'><a routerLink="favorites">my favorites</a></li>
+      <li class='user-navigation-item'><a routerLink="auth/login">login</a><span>&nbsp;/&nbsp;</span><a routerLink="auth/register">register</a></li>
+    </ul>
   </nav>
-  </section>
 </header>
+
 <router-outlet></router-outlet>
-<section class="feedback">
-  <h2 class="visible-hidden">Feed back</h2>
-  <p>
-    <b>Don't see the aparment you are dreaming of? We can help!</b>
-  </p>
-  <p>
-    <a class='btn btn-light' routerLink="contact">
-      <b>contact us</b>
-    </a>
-  </p>
-</section>
-<footer>
-  <section class="bottom-menu">
-    <h2 class="visible-hidden">Bottom menu</h2>
-    <div class="bottom-menu__logo">
-      <img src="" alt="Rennit bottom logo">
-      <p>
-        copyright 2019 rennit NYC. all rights reserved
-      </p>
+
+<!-- Footer block -->
+<footer class='footer'>
+
+  <div class="footer-rights">
+    <a href="#main"><img src="../assets/rennit_logo_footer.png" alt="rennit-logo" width="151" height="58"></a>
+    <p>&copy; copyright 2019 rennit <span>nyc</span>.all rights reserved</p>
+  </div>
+
+  <nav class='footer-navigation'>
+    <ul class='footer-navigation-list'>
+      <li class='footer-navigation-item'><a routerLink="">apartments</a></li>
+      <li class='footer-navigation-item'><a routerLink="application">application</a></li>
+      <li class='footer-navigation-item'><a routerLink="payment">make a payment</a></li>
+      <li class='footer-navigation-item'><a routerLink="contact">contact us</a></li>
+    </ul>
+  </nav>
+
+  <div class="footer-contact">
+    <div class="footer-contact-main">
+      <span>Email: </span> <a href="email:Moishe@Rennit.nyc">Moishe@Rennit.nyc</a><br>
+      <span>Phone: </span> <a href="tel:3475983934">347.598.3934</a><br>
+      <a href=""><img src="../assets/social_nav.png" alt="social navigation"></a>
     </div>
-    <div class="bottom-menu__links">
-      <p>
-        <a routerLink="">apartments</a>
-      </p>
-      <p>
-        <a routerLink="application">application</a>
-      </p>
-      <p>
-        <a routerLink="payment">make a payment</a>
-      </p>
-      <p>
-        <a routerLink="contact">contact us</a>
-      </p>
-    </div>
-    <div class="bottom-menu__social">
-      <p>Email: <a href="email:Moiche@Rennit.nyc">Moiche@Rennit.nyc</a></p>
-      <p>Phone: <a href="tel:3475983934">347.598.3934</a></p>
-      <p>
-        <img src="" alt="twitter">
-        <img src="" alt="instagramm">
-        <img src="" alt="facebook">
-        <img src="" alt="linkedin">
-      </p>
-    </div>
-    <div class="bottom-menu__subscribe">
-      <p>newsletter subscription</p>
-      <input type="text" /><button>></button>
-    </div>
-  </section>
+  </div>
+
+  <div class="footer-newsletter">
+    <h3>newsletter subscription</h3>
+    <form action="/" method='get'>
+      <label for="email" class='visually-hidden'>email</label>
+      <input id='email' type="email" placeholder="email address" />
+      <button type='button'>></button>
+    </form>
+  </div>
+
 </footer>
+

@@ -1,0 +1,436 @@
+@import '../../styles';
+
+.container-block {
+  margin-top: 55px;
+  width: 100%;
+}
+
+.apartments {
+  display: flex;
+  vertical-align: top;
+  padding: 17px 6% 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.apartments-preview {
+  margin-right: 10px;
+}
+
+.apartments-preview > img,
+.apartments-preview p img {
+  width: 120%;
+}
+
+.apartments-details {
+  margin-left: 10px;
+}
+
+.apartments-details h2 {
+  margin-top: 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.apartments-details-price,
+.apartments-details-options {
+  display: inline-block;
+  flex-basis: 50%;
+}
+
+.apartments-details-price b:first-child {
+  font-size: 35px;
+  line-height: 28px;
+  color: #ebda94;
+  vertical-align: middle;
+}
+
+.apartments-details-price span {
+  font-size: 14px;
+  line-height: 28px;
+  color: #6e6e6e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.apartments-comfort-item {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  line-height: 33px;
+}
+
+.apartments-comfort-item:before {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: -30px;
+  top: 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.deck:before {
+  background: url("../../assets/palm_icon.png") no-repeat;
+}
+
+.dishwasher:before {
+  background: url("../../assets/dishwasher_icon.png") no-repeat;
+}
+
+.laundry:before {
+  background: url("../../assets/laundry_icon.png") no-repeat;
+}
+
+.forest:before {
+  background: url("../../assets/forest_icon.png") no-repeat;
+}
+
+
+.apartments-details-options{
+  float: right;
+}
+
+.apartments-details-options span {
+  color: #ebda94;
+  padding: 20px 45px;
+  border: 1px solid #ebda94;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.apartments-details, .apartments-preview {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.apartments-comfort-list li,
+.apartments-details-list li,
+.apartments-feature-list li {
+  list-style: none;
+  display: inline-block;
+}
+
+.apartments-comfort-list ,
+.apartments-details-list ,
+.apartments-feature-list  {
+  padding-inline-start: 9px;
+}
+
+
+.apartments-comfort-list li {
+  width: 30%;
+}
+
+.apartments-details-list {
+  margin-top: 50px;
+}
+
+.apartments-feature-item {
+  font-size: 11px;
+  line-height: 22px;
+  margin-right: 5px;
+}
+
+.apartments-feature-item:first-of-type {
+  margin-right: 20px;
+}
+
+.apartments-details-item {
+  margin: 0 auto;
+  position: relative;
+  left: 45px;
+  display: inline-block;
+  padding-right: 82px;
+}
+
+.apartments-details-item:first-child::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left:-38px;
+  background-image: url('../../assets/bath_icon.png');
+  height: 24px;
+  width: 24px;
+}
+
+.apartments-details-item:last-child::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left:-38px;
+  background-image: url('../../assets/bad_icon.png');
+  height: 23px;
+  width: 28px;
+}
+
+.apartments-feature-list li:nth-child(1) {
+  vertical-align: top;
+}
+
+.apartments-feature-list li:nth-child(1):hover,
+.apartments-feature-list li:nth-child(1):focus {
+  filter: saturate(0);
+  cursor: pointer;
+}
+
+
+.apartments-feature-list li:nth-child(n+2) {
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.apartments-feature-list li:nth-child(n+2):nth-child(-n+4) {
+  background-color: #eb1318;
+}
+
+.apartments-feature-list li:nth-child(n+5):nth-child(-n+6) {
+  background-color: #00933c;
+}
+
+.apartments-feature-list li:nth-child(n+6) {
+  background-color: #09366c;
+}
+
+.apartments-feature-list li:nth-child(n+2):hover,
+.apartments-feature-list li:nth-child(n+2):focus {
+  background-color: #bfac82;
+  cursor: pointer;
+}
+
+.apartments-description {
+  clear: both;
+}
+
+.feedback {
+  align-items: center;
+  display: flex;
+  padding: 17px 6% 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+.feedback h2 {
+  font-size: 30px;
+  color: #ebda94;
+}
+
+.feedback div {
+  vertical-align: middle;
+}
+
+
+.feedback-contact {
+  margin-left: 65px;
+  flex-grow: 1;
+}
+
+.feedback-contact a {
+  position: relative;
+  color: rgb(67,67,67);
+  padding-left: 34px;
+}
+
+.feedback-contact a::before {
+  content: '';
+  position: absolute;
+}
+
+.feedback-contact a:first-of-type::before {
+  background-image: url('../../assets/mail_icon.png');
+  width: 19px;
+  height: 15px;
+  bottom: 3px;
+  left: 0;
+
+}
+
+.feedback-contact a:last-of-type::before {
+  background-image: url('../../assets/phone_icon.png');
+  width: 18px;
+  height: 18px;
+  bottom: 2px;
+  left: 7px;
+}
+
+
+.neighborhood{
+  padding: 17px 6% 20px;
+  max-width: 1920px;
+}
+
+.neighborhood h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 55px auto ;
+}
+
+.neighborhood-list {
+  display: flex;
+  margin: 0 auto;
+  padding-inline-start: 0;
+}
+
+.neighborhood-list > li {
+  margin:  auto 5px;
+  list-style: none;
+}
+
+.neighborhood-list > li:first-child {
+  margin-left: auto;
+  position: relative;
+}
+
+.neighborhood-list > li:first-child::before {
+  content: '';
+  position: absolute;
+  top: calc(316px/2 - 49px/2);
+  left: -49px;
+  width: 49px;
+  height: 49px;
+  background: url('../../assets/nav_arrow_left.png');
+}
+
+.neighborhood-list > li:last-child {
+  margin-right: auto;
+  position: relative;
+}
+
+.neighborhood-list > li:last-child::after {
+  content: '';
+  position: absolute;
+  top: calc(316px/2 - 49px/2);
+  right: -49px;
+  width: 49px;
+  height: 49px;
+  background: url('../../assets/nav_arrow_right.png');
+}
+
+.neighborhood-list-item {
+  margin-right: 10px;
+}
+
+.item-container {
+  position: relative;
+}
+
+.item-container > img {
+  height: auto;
+  width: 400px;
+}
+
+.neighborhood-item-description {
+  position: absolute;
+  bottom: 20px;
+  left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.neighborhood-item-price {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #ebda94;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.neighborhood-item-favorites {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.neighborhood-list-item li {
+  position: relative;
+  left: 10px;
+  display: inline-block;
+  padding-right: 82px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+}
+
+.neighborhood-list-item li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -38px;
+}
+
+.neighborhood-list-item li:first-child::before {
+  background-image: url('../../assets/bath_icon.png');
+  height: 24px;
+  width: 24px;
+}
+
+.neighborhood-list-item li:last-child::before {
+  background-image: url('../../assets/bad_icon.png');
+  width: 28px;
+  height: 23px;
+}
+
+.btn {
+  width: 240px;
+  height: 100%;
+
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.btn-darkgold {
+  background-color: #bfac82;
+  color: white;
+}
+
+.btn-darkgold:hover,
+.btn-darkgold:focus {
+  background-color: #000;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  padding: 17px 6% 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfac82;
+  height: 116px;
+}
+
+.contact p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact p:last-child {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contact a:hover,
+.contact a:focus  {
+  background-color: #2e2b89;
+}

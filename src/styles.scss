@@ -32,3 +32,10 @@ hr {
   width: calc(100% - 12%);
   border: 1px solid #dedede;
 }
+
+//MOBILE
+@media (max-width:1250px) {
+  hr {
+    width: 112%;
+  }
+}

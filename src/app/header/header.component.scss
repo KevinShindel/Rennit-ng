@@ -1,3 +1,5 @@
+@import '../../styles';
+
 .main-header {
   padding: 17px 6% 20px;
   max-width: 1920px;
@@ -53,10 +55,60 @@
 
 .user-navigation-item {
   span, a {
-    color: #ebda94
+    color: $dark_gold
   }
 }
 
 .user-navigation-item:last-of-type a {
   color: #bfac82;
 }
+
+.nav-btn {
+  display: none;
+}
+
+@media (max-width:1250px){
+  .main-header {
+    width: 100%;
+  }
+  .site-navigation  {
+   > a {
+      padding-right: 100px;
+    }
+    .site-navigation-item {
+    display: none;
+    }
+    .burger {
+      padding: 10px 10px;
+      background-color: $dark_gold;
+    }
+    .nav-btn {
+      display: inline-block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border:0;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+      vertical-align: top;
+      background-color: transparent;
+    }
+    .nav-btn:before {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: black;
+    }
+  }
+  .user-navigation-item a,
+  .user-navigation-item span {
+    color: $dark_gold;
+    font-weight: bold;
+  }
+}
+
+
+

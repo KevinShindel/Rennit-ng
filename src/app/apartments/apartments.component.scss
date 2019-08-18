@@ -65,6 +65,10 @@
   float: right;
 }
 
+.apartments-details-price {
+  width: 50%;
+}
+
 .apartments-details-price b:first-child {
   font-size: 35px;
   line-height: 28px;
@@ -84,7 +88,8 @@
   text-transform: uppercase;
   display: inline-block;
   float: left;
-  margin-top: 20px
+  margin-top: 20px;
+  width: 50%;
 }
 
 .apartments-comfort-item {
@@ -136,7 +141,7 @@
   width: 180px;
 }
 
-apartments-details-fee::after {
+.apartments-details-fee::after {
   clear: both;
 }
 
@@ -252,6 +257,7 @@ apartments-details-fee::after {
   padding: 17px 6% 20px;
   max-width: 1920px;
   margin: 0 auto;
+
 }
 
 
@@ -302,7 +308,9 @@ apartments-details-fee::after {
 .neighborhood{
   padding: 17px 6% 20px;
   max-width: 1920px;
+  margin: 0 auto;
 }
+
 
 .neighborhood h3 {
   text-align: center;
@@ -484,7 +492,6 @@ apartments-details-fee::after {
     display: block;
     vertical-align: top;
     padding: 17px 6% 20px;
-    width: 100%;
     margin: 0 auto;
   }
 
@@ -529,8 +536,6 @@ apartments-details-fee::after {
   }
 }
 
-
-
   .apartments-details-addr {
     order: 4;
   }
@@ -550,7 +555,6 @@ apartments-details-fee::after {
 
   //Neighborhood BLOCK
 .neighborhood {
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -568,7 +572,6 @@ apartments-details-fee::after {
     align-items: center;
     display: block;
     padding: 17px 6% 20px;
-    width: 100%;
     margin: 0 auto;
   }
 
@@ -593,7 +596,6 @@ apartments-details-fee::after {
   .contact {
     display: block;
     padding: 38px 6% 20px;
-    width: 100%;
     margin: 0 auto;
     background-color: #bfac82;
     p {
@@ -602,5 +604,36 @@ apartments-details-fee::after {
       margin-bottom: 13px;
     }
   }
+}
 
+@media (max-width:680px) {
+  .apartments-preview-3d {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+
+@media (max-width:560px) {
+  .apartments-preview-3d {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .neighborhood-list-item li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+  }
+  .neighborhood-list-item {
+    li {
+      position: relative;
+      left: 10px;
+      display: inline-block;
+      padding-right: 30px;
+      margin-top: 27px;
+      margin-bottom: 60px;
+    }
+  }
 }

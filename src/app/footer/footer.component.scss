@@ -1,13 +1,14 @@
 //FOOTER!!!
 footer {
-  width: 100%;
+  max-width: 1920px;
   background: #454545 url('../../assets/footer_background.png') bottom center no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
   display: flex;
   justify-content: space-evenly;
   vertical-align: top;
   align-items: flex-end;
+  margin: 0 auto;
+  padding: 17px 6% 100px;
 
   div,nav {
     margin-top: 40px;
@@ -107,7 +108,6 @@ footer {
   .footer {
     display: block;
     padding: 38px 6% 25px;
-    width: 100%;
     margin: 0 auto;
     div,nav {
       margin-top: 0;
@@ -132,13 +132,14 @@ footer {
 
   .footer-navigation-item {
     display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
   }
 
-  .footer-navigation-item:nth-of-type(even){
-    float: right;
-  }
+}
 
-  .footer-navigation-item:nth-of-type(odd) {
-    padding-right: 30px;
+@media (max-width:650px){
+  .footer-navigation-item {
+    width: 100%;
   }
 }

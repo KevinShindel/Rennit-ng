@@ -68,9 +68,6 @@
 }
 
 @media (max-width:1250px){
-  .main-header {
-    width: 100%;
-  }
   .site-navigation  {
    > a {
       padding-right: 100px;
@@ -109,6 +106,15 @@
     font-weight: bold;
   }
 }
+
+@media (max-width:610px) {
+  .site-navigation {
+    .user-navigation-item{
+      display: none;
+    }
+  }
+}
+
 
 
 
